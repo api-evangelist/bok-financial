@@ -65,12 +65,22 @@ apis:
   - type: Website
     url: https://www.bokfinancial.com/
 common:
+- type: DomainSecurity
+  url: security/bok-financial-domain-security.yml
+- type: LLMsTxt
+  url: llms/bok-financial-llms.txt
 - type: Website
   url: https://www.bokfinancial.com/
 - type: LinkedIn
   url: https://www.linkedin.com/company/bok-financial
 - type: Blog
   url: https://www.bokfinancial.com/insights
+- type: Support
+  url: https://www.bokfinancial.com/location-and-contact-us/contact-us
+- type: SecurityCenter
+  url: https://www.bokfinancial.com/security-center
+- type: InvestorRelations
+  url: https://investor.bokf.com/corporate-profile/
 - type: PrivacyPolicy
   url: https://www.bokfinancial.com/legal-and-privacy/privacy-policy
 maintainers:

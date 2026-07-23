@@ -1,0 +1,20 @@
+generated: '2026-07-23'
+method: searched
+source: live probes of https://www.bokfinancial.com/.well-known/*
+host: https://www.bokfinancial.com
+note: >-
+  No /.well-known/ discovery documents are published. BOK Financial exposes no
+  first-party developer/API surface, so no security.txt, OIDC/OAuth discovery,
+  api-catalog, or ai-plugin manifest exists. Absence recorded for provenance;
+  no WellKnown catalog pointer is wired because no catalog was found.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
