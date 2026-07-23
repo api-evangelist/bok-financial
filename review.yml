@@ -1,0 +1,91 @@
+reviewer: API Evangelist
+date: '2026-07-23'
+provider: BOK Financial
+slug: bok-financial
+domain: bokfinancial.com
+tier: regional
+summary: >-
+  BOK Financial Corporation (NASDAQ: BOKF), a ~$50B regional banking holding
+  company in Tulsa, OK (Bank of Oklahoma / Bank of Texas / BOK Financial brands),
+  exposes no first-party public API developer program. Its only verifiable public
+  machine-accessible surface is consumer-permissioned account data access
+  brokered through third-party aggregators (Plaid confirmed). Commercial treasury
+  and ERP connectivity exists but is contracted privately, not documented for
+  self-serve developers.
+developer_portal:
+  found: false
+  probed:
+  - url: https://developer.bokfinancial.com
+    status: '000'
+    note: DNS/connection failure — subdomain does not resolve
+  - url: https://api.bokfinancial.com
+    status: '000'
+    note: DNS/connection failure — subdomain does not resolve
+  - url: https://www.bokfinancial.com/developer
+    status: '404'
+  - url: https://www.bokfinancial.com/api
+    status: '404'
+downloadable_specs:
+  found: false
+  note: >-
+    No public OpenAPI/Swagger/Postman collections located. No first-party API
+    reference is published. Nothing harvested into openapi/ — none exists to
+    harvest without fabrication.
+auth_model:
+  first_party: none-documented
+  note: >-
+    No documented first-party auth (no OAuth2/OIDC/API-key/mTLS developer flow is
+    published). Consumer data-access auth is delegated to the aggregator's
+    consent flow (Plaid), which uses the consumer's BOK online-banking credentials
+    / permissioned consent.
+open_finance_posture:
+  aggregator_access:
+    plaid: confirmed
+    note: >-
+      BOK Financial deposit accounts are reachable through Plaid's data network
+      (third-party coverage listings confirm auth/balance/transactions/identity).
+      Connection method (direct API vs. credential-based) is set by the aggregator
+      and not disclosed by BOK Financial.
+  akoya: unverified
+  mx_finicity: unverified
+  fdx_participation: not-publicly-documented
+  cfpb_1033_posture: >-
+    No public statement located on BOK Financial's 1033 personal-financial-data-
+    rights data-access posture. As a covered depository institution it falls under
+    the CFPB Section 1033 rule scope, but no first-party developer-facing data
+    access program is published as of this review.
+spec_provenance:
+  harvested: 0
+  note: >-
+    Zero specs added. Every apis[] pointer resolves to live HTML pages verified
+    HTTP 200 (privacy policy, website). No spec was invented.
+verified_links:
+- url: https://www.bokfinancial.com/
+  status: '200'
+  type: Website
+- url: https://www.bokfinancial.com/insights
+  status: '200'
+  type: Blog
+- url: https://www.bokfinancial.com/security-center
+  status: '200'
+  type: SecurityCenter
+- url: https://www.bokfinancial.com/legal-and-privacy/privacy-policy
+  status: '200'
+  type: PrivacyPolicy
+- url: https://www.linkedin.com/company/bok-financial
+  status: '200'
+  type: LinkedIn
+- url: https://investor.bokf.com/corporate-profile/
+  status: '200'
+  type: InvestorRelations
+absent:
+- DeveloperPortal
+- Documentation (API reference)
+- GitHubOrganization
+- StatusPage
+- OpenAPI / Swagger / Postman
+recommendation: >-
+  Represent honestly as an aggregator-only / no-public-API regional bank. Revisit
+  if BOK Financial launches a developer portal or publishes a CFPB 1033 data-access
+  API; until then the network entry correctly reflects a thin, aggregator-brokered
+  public surface.
