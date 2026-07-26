@@ -23,66 +23,42 @@ accessModel:
   label: No first-party API · Aggregator-only (Plaid) data access
   confidence: medium
   source:
-  - website
-  - review
+    - website
+    - review
   generated: '2026-07-23'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bok-financial.png
 tags:
-- United States
-- Banking
-- Regional Bank
-- Financial Services
-- Treasury Management
-- Consumer-Permissioned Data
-- Open Finance
-- Oklahoma
-created: '2026-05-05'
-modified: '2026-07-23'
-apis:
-- aid: bok-financial:bok-financial-data-access
-  name: BOK Financial Consumer-Permissioned Account Access (via Aggregators)
-  description: >-
-    Consumer-permissioned access to BOK Financial deposit-account data — balances,
-    transactions, account and identity verification — is available to fintech
-    applications through third-party data aggregators rather than a first-party
-    BOK Financial API. BOK Financial customer accounts are reachable via Plaid's
-    data network (confirmed coverage), which brokers the consumer's online-banking
-    consent. BOK Financial does not publish an OpenAPI/Swagger definition, public
-    sandbox, or self-serve developer keys for this surface; access terms and
-    onboarding are governed by the aggregator, not by a documented BOK Financial
-    developer program.
-  humanURL: https://www.bokfinancial.com/legal-and-privacy/privacy-policy
-  tags:
-  - Data Access
-  - Open Finance
   - United States
-  - Aggregator
+  - Banking
+  - Regional Bank
+  - Financial Services
+  - Treasury Management
   - Consumer-Permissioned Data
-  properties:
-  - type: Documentation
-    url: https://www.bokfinancial.com/legal-and-privacy/privacy-policy
+  - Open Finance
+  - Oklahoma
+created: '2026-05-05'
+modified: '2026-07-25'
+apis: []
+common:
+  - type: DomainSecurity
+    url: security/bok-financial-domain-security.yml
+  - type: LLMsTxt
+    url: llms/bok-financial-llms.txt
   - type: Website
     url: https://www.bokfinancial.com/
-common:
-- type: DomainSecurity
-  url: security/bok-financial-domain-security.yml
-- type: LLMsTxt
-  url: llms/bok-financial-llms.txt
-- type: Website
-  url: https://www.bokfinancial.com/
-- type: LinkedIn
-  url: https://www.linkedin.com/company/bok-financial
-- type: Blog
-  url: https://www.bokfinancial.com/insights
-- type: Support
-  url: https://www.bokfinancial.com/location-and-contact-us/contact-us
-- type: SecurityCenter
-  url: https://www.bokfinancial.com/security-center
-- type: InvestorRelations
-  url: https://investor.bokf.com/corporate-profile/
-- type: PrivacyPolicy
-  url: https://www.bokfinancial.com/legal-and-privacy/privacy-policy
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/bok-financial
+  - type: Blog
+    url: https://www.bokfinancial.com/insights
+  - type: Support
+    url: https://www.bokfinancial.com/location-and-contact-us/contact-us
+  - type: SecurityCenter
+    url: https://www.bokfinancial.com/security-center
+  - type: InvestorRelations
+    url: https://investor.bokf.com/corporate-profile/
+  - type: PrivacyPolicy
+    url: https://www.bokfinancial.com/legal-and-privacy/privacy-policy
 maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
+  - FN: Kin Lane
+    email: kin@apievangelist.com
