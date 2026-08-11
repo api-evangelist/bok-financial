@@ -14,6 +14,17 @@ description: >-
   aggregators (Plaid coverage confirmed), while commercial treasury and ERP
   connectivity is offered privately to clients under contract rather than through
   a self-serve documented developer program.
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-11'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
